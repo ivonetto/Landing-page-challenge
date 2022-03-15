@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
+
+
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +26,67 @@
   </style>
 </head>
 <body>
-  Product
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-navigation">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo" >
+        </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
+        <nav class="nav header-nav">
+          <ul class="nav-list">
+            <li class="nav-list dropdown">
+                <button class="dropdown-toggle">Product</button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Overview</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Pricing</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Marketplace</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Features</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Integrations</a></li>
+                </ul>
+            </li>
+            <li class="nav-list dropdown">
+                <button class="dropdown-toggle">Company</button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">About</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Team</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Blog</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Careers</a></li>
+                </ul>
+            </li>
+            <li class="nav-list dropdown">
+                <button class="dropdown-toggle">Connect</button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Contact</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">Newsletter</a></li>
+                  <li class="dropdown-item"><a href="#" class="dropdown-link">LinkedIn</a></li>
+                </ul>
+            </li>
+          </ul>
+          <button class="btn btn-login btn-secundary">Login</button>
+          <button class="btn btn-signup btn-primary">Sign Up</button>
+        </nav>
+        <button class="hamburger">
+          <!-- <img src="./images/icon-hamburger.svg" alt="" /> -->
+        </button>
+      </div>
+    </div>
+    <div class="header-content">
+      <h1 class="header-title">A modern publishing platform</h1>
+      <p class="header-subtitle">Grow your audience and build your online brand</p>
+      <div class="action">
+          <a href="#" class="btn btn-primary">Start for Free</a>
+          <a href="#" class="btn btn-secundary">Learn More</a>
+      </div>
+    </div>
+  </header>
   
-  Login
-  Sign Up
+  
+  
+  
+  
+  
+ 
 
   A modern publishing platform
   Grow your audience and build your online brand
@@ -93,7 +142,8 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ivo Netto</a>.
   </div>
+  <script src="/assets/script.js"></script>
 </body>
 </html>
